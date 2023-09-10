@@ -11,9 +11,7 @@ namespace Universinator.View
             int threadNumber = 200;
         public void LoadScreenDisplay()
         {
-
             PlanetAnimation();
-
         }
 
         public void Hardline()
@@ -22,7 +20,6 @@ namespace Universinator.View
             Console.WriteLine("                                                                                       ");
             Console.ResetColor();
         }
-
         public void SceneTransition()
         {
             Hardline();
@@ -31,7 +28,6 @@ namespace Universinator.View
             Console.Clear();
             Hardline();
         }
-
         public void PlanetAnimation()
         {
             Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -349,6 +345,5 @@ namespace Universinator.View
             Console.WriteLine("");
             Hardline();
         }
-    }
-    
+    } 
 }

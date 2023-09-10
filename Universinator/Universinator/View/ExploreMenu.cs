@@ -13,13 +13,9 @@ namespace Universinator.View
         public void DisplayExploreMenu()
         {
             Banner banner = new Banner();
-            SolarSystem solarSystem = new SolarSystem();
-
+           
             banner.DisplayBanner();
-            Console.WriteLine("Active System");
-
-            Console.WriteLine("The Suns core is: " + solarSystem.StarCoreInformation());
-
+            
 
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;
@@ -31,7 +27,7 @@ namespace Universinator.View
             {
                 Console.SetCursorPosition(left, top);
 
-                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Continue Exploration\u001b[0m ");
+                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}_SolarSys.Overview\u001b[0m ");
                 Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Go back\u001b[0m ");
 
 
@@ -53,7 +49,7 @@ namespace Universinator.View
                         break;
                 }
             }
-            SubMenu2 subMenu2 = new SubMenu2();
+            SolarSystemMenu subMenu2 = new SolarSystemMenu();
             
             switch (option)
             {

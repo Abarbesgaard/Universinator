@@ -7,7 +7,7 @@ using Universinator.View.Decorator;
 
 namespace Universinator.View
 {
-    public class SubMenu2
+    public class SolarSystemMenu
     {
         public void DisplaySubMenu2()
         {
@@ -15,6 +15,8 @@ namespace Universinator.View
             banner.DisplayBanner();
 
 
+
+            #region #menu
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;
             Decorate decorate = new Decorate();
@@ -63,6 +65,7 @@ namespace Universinator.View
 
 
             }
+            #endregion
         }
 
     }

@@ -32,7 +32,7 @@ namespace Universinator.View
             {
                 Console.SetCursorPosition(left, top);
 
-                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Explore\u001B[0m ");
+                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Start Exploration\u001B[0m ");
                 Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Show Stars in Current System \u001b[0m ");
                 Console.WriteLine($"{(option == 3 ? decorate.Decorating() : "   ")}Generate Town\u001b[0m ");
 
