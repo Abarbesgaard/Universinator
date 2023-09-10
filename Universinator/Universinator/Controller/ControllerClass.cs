@@ -10,10 +10,16 @@ namespace Universinator.Controller
     public class ControllerClass
     {
         MainMenu MainMenu = new MainMenu();
+        LoadScreen Screen = new LoadScreen();
 
         public void Run()
         {
             MainMenu.DisplayMainMenu();
+        }
+
+        public void Load()
+        {
+            Screen.LoadScreenDisplay();
         }
 
         public void SetConsoleDisplayWidthAndHeight()

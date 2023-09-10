@@ -16,7 +16,8 @@ namespace Universinator.View
             SolarSystem solarSystem = new SolarSystem();
 
             banner.DisplayBanner();
-            Console.WriteLine("Current System");
+            Console.WriteLine("Active System");
+
             Console.WriteLine("The Suns core is: " + solarSystem.StarCoreInformation());
 
 
