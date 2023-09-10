@@ -1,0 +1,15 @@
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.csproj.AssemblyReference.cache
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.AssemblyInfoInputs.cache
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.AssemblyInfo.cs
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.csproj.CoreCompileInputs.cache
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Universinator.exe
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Universinator.deps.json
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Universinator.runtimeconfig.json
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Universinator.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Universinator.pdb
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\refint\Universinator.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.pdb
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.genruntimeconfig.cache
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\ref\Universinator.dll
