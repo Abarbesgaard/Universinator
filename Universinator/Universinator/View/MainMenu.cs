@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Universinator.Model;
 using Universinator.View.Decorator;
 
 namespace Universinator.View
@@ -11,36 +12,42 @@ namespace Universinator.View
 
     public class MainMenu
     {
+            private int menuOptionMin = 1;
+            private int menuOptionMax = 3;
+
         public void DisplayMainMenu()
         {
             Banner banner = new Banner();
-            banner.DisplayBanner();
-            
             Decorate decorate = new Decorate();
+            banner.DisplayBanner();
+
 
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;
             ConsoleKeyInfo key;
             bool isSelected = false;
-            
+
+            #region menuLoop
             while (!isSelected)
             {
                 Console.SetCursorPosition(left, top);
 
-                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Sub Menu 1\u001B[0m ");
-                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Generate Town\u001b[0m ");
+                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Explore\u001B[0m ");
+                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Show Stars in Current System \u001b[0m ");
+                Console.WriteLine($"{(option == 3 ? decorate.Decorating() : "   ")}Generate Town\u001b[0m ");
 
 
                 key = Console.ReadKey(false);
 
+                
                 switch (key.Key)
                 {
                     case ConsoleKey.UpArrow:
-                        option = option == 1 ? 2 : option - 1;
+                        option = option == menuOptionMin ? menuOptionMax : option - 1;
                         break;
 
                     case ConsoleKey.DownArrow:
-                        option = option == 2 ? 1 : option + 1;
+                        option = option == menuOptionMax ? menuOptionMin : option + 1;
                         break;
 
                     case ConsoleKey.Enter:
@@ -49,12 +56,12 @@ namespace Universinator.View
                         break;
                 }
             }
-            SubMenu1 subMenu1 = new SubMenu1();
+            ExploreMenu exploreMenu = new ExploreMenu();
             switch (option)
             {
                 case 1:
                     Console.Clear();
-                    subMenu1.DisplaySubMenu1();
+                    exploreMenu.DisplayExploreMenu();
                     break;
 
                 case 2:
@@ -64,6 +71,7 @@ namespace Universinator.View
 
 
             }
+            #endregion
         }
 
     }

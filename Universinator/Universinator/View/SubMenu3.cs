@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Universinator.Model;
 using Universinator.View.Decorator;
 
 namespace Universinator.View
@@ -17,10 +18,11 @@ namespace Universinator.View
             Decorate decorate = new Decorate();
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;
-            
+
             ConsoleKeyInfo key;
             bool isSelected = false;
-
+            
+            
             while (!isSelected)
             {
                 Console.SetCursorPosition(left, top);
@@ -47,11 +49,11 @@ namespace Universinator.View
                         break;
                 }
             }
-            
             switch (option)
             {
                 case 1:
                     Console.Clear();
+
 
                     break;
 

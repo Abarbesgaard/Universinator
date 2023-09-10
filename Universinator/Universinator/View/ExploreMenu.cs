@@ -4,15 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Universinator.View.Decorator;
+using Universinator.Model;
 
 namespace Universinator.View
 {
-    public class SubMenu1
+    public class ExploreMenu
     {
-        public void DisplaySubMenu1()
+        public void DisplayExploreMenu()
         {
             Banner banner = new Banner();
+            SolarSystem solarSystem = new SolarSystem();
+
             banner.DisplayBanner();
+            Console.WriteLine("Current System");
+            Console.WriteLine("The Suns core is: " + solarSystem.StarCoreInformation());
 
 
             (int left, int top) = Console.GetCursorPosition();
@@ -25,7 +30,7 @@ namespace Universinator.View
             {
                 Console.SetCursorPosition(left, top);
 
-                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Sub Menu 2\u001b[0m ");
+                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Continue Exploration\u001b[0m ");
                 Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Go back\u001b[0m ");
 
 
@@ -48,11 +53,13 @@ namespace Universinator.View
                 }
             }
             SubMenu2 subMenu2 = new SubMenu2();
+            
             switch (option)
             {
                 case 1:
                     Console.Clear();
                     subMenu2.DisplaySubMenu2();
+                    
                     break;
 
                 case 2:

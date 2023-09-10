@@ -47,12 +47,13 @@ namespace Universinator.View
                         break;
                 }
             }
-            SubMenu3 subMenu3 = new SubMenu3();
             switch (option)
             {
                 case 1:
                     Console.Clear();
-                    subMenu3.DisplaySubMenu3();
+            SubMenu3 subMenu3 = new SubMenu3();
+            subMenu3.DisplaySubMenu3();
+                    
                     break;
 
                 case 2:
