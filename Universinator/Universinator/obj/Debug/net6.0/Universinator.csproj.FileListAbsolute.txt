@@ -1,4 +1,3 @@
-C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.csproj.AssemblyReference.cache
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.AssemblyInfoInputs.cache
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.AssemblyInfo.cs

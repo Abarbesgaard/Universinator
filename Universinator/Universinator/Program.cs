@@ -12,14 +12,17 @@ namespace Universinator
     {
         static void Main(string[] args)
         {
+            
             ControllerClass controller = new ControllerClass();
 
             controller.Load();
             Console.ReadLine();
+
             Console.Clear();
             controller.SetConsoleDisplayWidthAndHeight();
             
             controller.Run();
+            
         }
     }
 }

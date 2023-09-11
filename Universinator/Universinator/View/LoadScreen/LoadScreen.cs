@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Universinator.View
+namespace Universinator.View.LoadScreen
 {
     public class LoadScreen
     {
-            int threadNumber = 200;
+        int threadNumber = 350;
         public void LoadScreenDisplay()
         {
             PlanetAnimation();
@@ -157,13 +157,13 @@ namespace Universinator.View
             Console.WriteLine("  .                               .       .           .      .        .");
             Console.WriteLine("        o.                   .");
             Console.WriteLine("  .      .              .                  .           .");
-            Console.WriteLine("          0.                           .                             ");
-            Console.WriteLine("                 .          .                 ,                ,    ,");
+            Console.WriteLine("          0.                                                         ");
+            Console.WriteLine("                 .          .                 ,                ,    *");
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
-            Console.WriteLine("   .          o.                 .                   .            .");
-            Console.WriteLine("     .         \\                 ,       ,     .                .");
-            Console.WriteLine("               #\\##\\#      .                              .        .");
+            Console.WriteLine("   .          o.                                     .            .");
+            Console.WriteLine("     .         \\                 .       ,     .                .");
+            Console.WriteLine("               #\\##\\#                                     .        .");
             Console.WriteLine("             #  #O##\\###                .                        .");
             Console.WriteLine("   .        #*#  #\\##\\###                       .                     ,");
             Console.WriteLine("        .   ##*#  #\\##\\##               .                     .");
@@ -180,8 +180,8 @@ namespace Universinator.View
             Console.WriteLine("     *   .                  .              .        .   *          .");
             Console.WriteLine("  .                               .       .           .      .        .");
             Console.WriteLine("        o.                   .");
-            Console.WriteLine("   .     .              .                  .           .");
-            Console.WriteLine("          0.                           .                             ");
+            Console.WriteLine("   .     .              .                              *");
+            Console.WriteLine("          0.                                                         ");
             Console.WriteLine("                 .          .                 ,                ,    ,");
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
@@ -206,14 +206,14 @@ namespace Universinator.View
             Console.WriteLine("        o.                   .");
             Console.WriteLine("    .    .              .                  .           .");
             Console.WriteLine("          0.                           .                             ");
-            Console.WriteLine("                 .          .                 ,                ,    ,");
+            Console.WriteLine("                 .                            ,                ,    ,");
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
             Console.WriteLine("   .          o.                 .                   .            .");
             Console.WriteLine("     .         \\                 ,       ,     .                .");
             Console.WriteLine("               #\\##\\#      .                              .        .");
             Console.WriteLine("             #  #O##\\###                .                        .");
-            Console.WriteLine("   .        #*#  #\\##\\###                       .                     ,");
+            Console.WriteLine("   .        #*#  #\\##\\###                       *                     ,");
             Console.WriteLine("        .   ##*#  #\\##\\##               .                     .");
             Console.WriteLine("      .      ##*#  #o##\\#                                       ,       .");
             Console.WriteLine("  .       .     *#  #\\#                          .             .          ,");
@@ -224,7 +224,7 @@ namespace Universinator.View
             Console.WriteLine("   --__                      ___-- ^ ^--__");
             Console.WriteLine("");
             SceneTransition();
-            Console.WriteLine("                .                                            .\r\n");
+            Console.WriteLine("                                                             .\r\n");
             Console.WriteLine("     *   .                  .              .        .   *          .");
             Console.WriteLine("  .                               .       .           .      .        .");
             Console.WriteLine("        o.                   .");
@@ -233,7 +233,7 @@ namespace Universinator.View
             Console.WriteLine("                 .          .                 ,                ,    ,");
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
-            Console.WriteLine("   .          o.                 .                   .            .");
+            Console.WriteLine("   .          o.                 .         .          .            .");
             Console.WriteLine("     .         \\                 ,       ,     .                .");
             Console.WriteLine("               #\\##\\#      .                              .        .");
             Console.WriteLine("             #  #O##\\###                .                        .");
@@ -264,7 +264,7 @@ namespace Universinator.View
             Console.WriteLine("   .        #*#  #\\##\\###                       .                     ,");
             Console.WriteLine("        .   ##*#  #\\##\\##               .                     .");
             Console.WriteLine("      .      ##*#  #o##\\#                                       ,       .");
-            Console.WriteLine("  .       .     *#  #\\#                          .             .          ,");
+            Console.WriteLine("  .       .     *#  #\\#                .                       .          ,");
             Console.WriteLine("                      \\          .                         .");
             Console.WriteLine("____ ^/\\___ ^ --____ /\\____O______________ /\\/\\---/\\___________-- - ______________");
             Console.WriteLine("   /\\^^^^^^^'\\ ^          ^       ---");
@@ -276,7 +276,7 @@ namespace Universinator.View
             Console.WriteLine("     *   .                  .              .        .   *          .");
             Console.WriteLine("  .                               .       .           .      .        .");
             Console.WriteLine("        o.                   .");
-            Console.WriteLine("       . .              .                  .           .");
+            Console.WriteLine("       . .              .                              .");
             Console.WriteLine("          0.                           .                             ");
             Console.WriteLine("                 .          .                 ,                ,    ,");
             Console.WriteLine(" .          \\          .                         .");
@@ -298,11 +298,11 @@ namespace Universinator.View
             SceneTransition();
             Console.WriteLine("                .                                            .\r\n");
             Console.WriteLine("     *   .                  .              .        .   *          .");
-            Console.WriteLine("  .                               .       .           .      .        .");
+            Console.WriteLine("  .                               .       .           .          .    .");
             Console.WriteLine("        o.                   .");
             Console.WriteLine("        ..              .                  .           .");
             Console.WriteLine("          0.                           .                             ");
-            Console.WriteLine("                 .          .                 ,                ,    ,");
+            Console.WriteLine("                 .          .           .     ,                ,    ,");
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
             Console.WriteLine("   .          o.                 .                   .            .");
@@ -330,7 +330,7 @@ namespace Universinator.View
             Console.WriteLine(" .          \\          .                         .");
             Console.WriteLine("      .      \\   ,");
             Console.WriteLine("   .          o.                 .                   .            .");
-            Console.WriteLine("     .         \\                 ,       ,     .                .");
+            Console.WriteLine("     .         \\                 ,             .                .");
             Console.WriteLine("               #\\##\\#      .                              .        .");
             Console.WriteLine("             #  #O##\\###                .                        .");
             Console.WriteLine("   .        #*#  #\\##\\###                       .                     ,");
@@ -342,8 +342,8 @@ namespace Universinator.View
             Console.WriteLine("   /\\^^^^^^^'\\ ^          ^       ---");
             Console.WriteLine("         -- - --- ----__ ^");
             Console.WriteLine("   --__                      ___-- ^ ^--__");
-            Console.WriteLine("");
+            Console.WriteLine("PRESS ENTER TO CONTINUE");
             Hardline();
         }
-    } 
+    }
 }
