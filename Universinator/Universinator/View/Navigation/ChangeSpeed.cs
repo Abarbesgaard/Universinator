@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using Universinator.Model.Ship;
 using Universinator.View.Decorator;
 
-namespace Universinator.View.ShipUI
+namespace Universinator.View.Navigation
 {
     public class ChangeSpeed
     {
         private int menuOptionMin = 1;
         private int menuOptionMax = 3;
         private string userInput = "";
-       
+
         public void ChangeSpeedDisplay()
         {
 
@@ -28,7 +28,7 @@ namespace Universinator.View.ShipUI
             userInput = Console.ReadLine();
             float newSpeed = float.Parse(userInput);
             ship.ChangeSpeedOfShip(newSpeed);
-            
+
 
             Console.WriteLine("Speed is set to: " + ship.ShipSpeed.ToString());
 
@@ -82,7 +82,7 @@ namespace Universinator.View.ShipUI
                     break;
                 case 3:
                     Console.Clear();
-                    MainMenu mainMenu = new MainMenu();
+                    ShipMainMenu mainMenu = new ShipMainMenu();
                     mainMenu.DisplayMainMenu();
                     break;
 

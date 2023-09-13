@@ -3,53 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Universinator.Model.Ship;
 using Universinator.View.Decorator;
 
-namespace Universinator.View.ShipUI
+namespace Universinator.View.Navigation
 {
-    public class ShipInformationMenu
+    public class ActiveSolarSystemOverViewMenu
     {
         private int menuOptionMin = 1;
-        private int menuOptionMax = 3;
+        private int menuOptionMax = 4;
+        private string userInput = "";
 
-        public void DisplayShipInformationMenu()
+        public void ActiveSolarSystemOverViewDisplay()
         {
             Banner banner = new Banner();
             Decorate decorate = new Decorate();
             banner.DisplayBanner();
-            Console.WriteLine("SHIP INFORMATION");
+            Console.WriteLine("Our ship is currently at: planet1 ^");
 
-            /*
-             * Her skal være kode der generere information omkring status på de forskellige ting på skibet
-             */
-            #region Ship information display
-            Ship ship = Ship.GetInstance();
-            
-            ship.ShipView();
+            Console.WriteLine("SYSTEM NAME");
 
-            ship.OverView();
+            Console.WriteLine("System Overview: ");
 
-            ship.ShipTypeInformation();
-            Console.WriteLine("");
-            ship.NavigationDisplay();
+            Console.WriteLine("☼      ^                 ○ ");
+            Console.WriteLine("  ");
+            Console.WriteLine("Key:");
+            Console.WriteLine(" ☼: Sun    ");
+            Console.WriteLine(" ^: planet1    ");
+            Console.WriteLine(" ○: planet2    ");
 
-            #endregion
+
 
 
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;
             ConsoleKeyInfo key;
             bool isSelected = false;
-
-            #region menuLoop
             while (!isSelected)
             {
                 Console.SetCursorPosition(left, top);
 
-                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Change Speed\u001B[0m ");
-                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}TEMP \u001b[0m ");
-                Console.WriteLine($"{(option == 3 ? decorate.Decorating() : "   ")}Back to Control\u001b[0m ");
+                Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Details\u001B[0m ");
+                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Go Back \u001b[0m ");
+
+
 
 
                 key = Console.ReadKey(false);
@@ -71,29 +67,21 @@ namespace Universinator.View.ShipUI
                         break;
                 }
             }
-            ExploreMenu exploreMenu = new ExploreMenu();
+
             switch (option)
             {
                 case 1:
                     Console.Clear();
-                    ChangeSpeed changeSpeed = new ChangeSpeed();
-                    changeSpeed.ChangeSpeedDisplay();
 
                     break;
 
                 case 2:
                     Console.Clear();
-
+                    NavigationMenu navigationMenu = new NavigationMenu();
+                    navigationMenu.NavigationDisplay();
                     break;
-                case 3:
-                    Console.Clear();
-                    MainMenu mainMenu = new MainMenu();
-                    mainMenu.DisplayMainMenu();
-                    break;
-
-
             }
-            #endregion
         }
     }
 }
+

@@ -15,10 +15,6 @@ namespace Universinator.Model.Ship
         public string LifeSupportSystem { get; set; }
         public string CommunicationSystem { get; set; }
         private static Ship instance;
-
-        
-
-
         private Ship() { }
         public static Ship GetInstance()
         {
@@ -30,7 +26,6 @@ namespace Universinator.Model.Ship
         }
         public void NavigationDisplay()
         {
-            Course = "XannuVII";
             Console.WriteLine("|---------|---------->");
             Console.WriteLine("| Speed   |" + ShipSpeed.ToString() + " Km/t");
             Console.WriteLine("|---------|---------->");
@@ -44,6 +39,12 @@ namespace Universinator.Model.Ship
         {
             this.ShipSpeed = shipSpeed;
             return ShipSpeed;
+        }
+
+        public string ChangeCourse(string course)
+        {
+            this.Course = course;
+            return Course;
         }
 
         public void ShipView()
@@ -63,6 +64,7 @@ namespace Universinator.Model.Ship
 
         public void OverView()
         {
+           
             Console.WriteLine("                                       ");
             Console.WriteLine("                      ╔════╗           ");
             Console.WriteLine("            ╔════╦════╣   ⌂║           ");
