@@ -12,7 +12,9 @@ namespace Universinator
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             
+
             ControllerClass controller = new ControllerClass();
 
             controller.Load();
