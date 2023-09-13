@@ -22,14 +22,15 @@ namespace Universinator.View
             var option = 1;
             ConsoleKeyInfo key;
             bool isSelected = false;
-
+            
+            
             #region menuLoop
             while (!isSelected)
             {
+            
                 Console.SetCursorPosition(left, top);
-
                 Console.WriteLine($"{(option == 1 ? decorate.Decorating() : "   ")}Start\u001B[0m ");
-                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Options \u001b[0m ");
+                Console.WriteLine($"{(option == 2 ? decorate.Decorating() : "   ")}Options\u001b[0m ");
                 Console.WriteLine($"{(option == 3 ? decorate.Decorating() : "   ")}Quit\u001b[0m ");
 
 

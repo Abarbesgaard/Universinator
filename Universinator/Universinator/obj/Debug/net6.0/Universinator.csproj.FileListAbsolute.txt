@@ -12,3 +12,11 @@ C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\D
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.pdb
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.genruntimeconfig.cache
 C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\ref\Universinator.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.csproj.AssemblyReference.cache
+C:\Users\45217\Desktop\Projekter\Universinator\Universinator\Universinator\obj\Debug\net6.0\Universinator.csproj.CopyComplete

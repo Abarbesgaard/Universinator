@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RLdtAWJ+18eqPzz5SC7/L6vu3br7137ZTn615EY2YUlA4gf2fciuoZjwusA5oS6p76FOs9527LhPBVRCgc7L/w==",
+  "dgSpecHash": "KSk+xamKfBm4eLt9tlZPBEthv/HXb8DgSF+bKjMuK5BJaoIEBHneG4Acrrra6iJUfkvsKsPZhBJzcGTVxathFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\45217\\Desktop\\Projekter\\Universinator\\Universinator\\Universinator\\Universinator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\45217\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\45217\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\45217\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

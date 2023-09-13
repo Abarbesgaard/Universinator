@@ -13,5 +13,7 @@ namespace Universinator.View.Decorator
             var decorator = ">  \u001b[33m";
             return decorator;
         }  
+
+        
     }
 }

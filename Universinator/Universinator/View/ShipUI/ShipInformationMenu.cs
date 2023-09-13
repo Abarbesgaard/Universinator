@@ -27,6 +27,9 @@ namespace Universinator.View.ShipUI
             Ship ship = Ship.GetInstance();
             
             ship.ShipView();
+
+            ship.OverView();
+
             ship.ShipTypeInformation();
             Console.WriteLine("");
             ship.NavigationDisplay();

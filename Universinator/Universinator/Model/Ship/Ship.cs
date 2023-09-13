@@ -61,6 +61,28 @@ namespace Universinator.Model.Ship
             Console.WriteLine("This is a XaewinSchenu ship. Its value is approximately: 3400¤");
         }
 
-        
+        public void OverView()
+        {
+            Console.WriteLine("                                       ");
+            Console.WriteLine("                      ╔════╗           ");
+            Console.WriteLine("            ╔════╦════╣   ⌂║           ");
+            Console.WriteLine("            ║ö   σ    ║    ║           ");
+            Console.WriteLine("         ╔══╬═══σ╬══╦σ╩═══σ╩╦════╦════╗");
+            Console.WriteLine("         ║  σ    ║██║  ¥    σ    ║   C║");
+            Console.WriteLine("         ║  σ   ¢║██║       ║ Φ  σ   C║");
+            Console.WriteLine("         ╚══╬═══σ╬══╩σ╦═══σ╦╩════╩════╝");
+            Console.WriteLine("            ║    σ    ║    ║           ");
+            Console.WriteLine("            ╚════╩════╣    ║           ");
+            Console.WriteLine("                      ╚════╝           ");
+            Console.WriteLine("σ: Door");
+            Console.WriteLine("ö: Oxygen Systems ");
+            Console.WriteLine("¢: Propulsion Systems ");
+            Console.WriteLine("¥: Life Support Systems ");
+            Console.WriteLine("Φ: Communication Systems ");
+            Console.WriteLine("C: Navigation Systems ");
+
+
+
+        }
     }
 }
