@@ -25,14 +25,5 @@ namespace Universinator.Controller
             Screen.LoadScreenDisplay();
         }
 
-        public void SetConsoleDisplayWidthAndHeight()
-        {
-
-            Console.SetWindowSize(80, 30);
-            Console.SetBufferSize(80, 30);
-            Console.SetWindowPosition(0, 0);
-        }
-       
-
     }
 }

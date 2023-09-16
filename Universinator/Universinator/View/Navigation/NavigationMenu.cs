@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Universinator.Controller;
 using Universinator.Model.Ship;
 using Universinator.View.Decorator;
 
@@ -23,7 +24,6 @@ namespace Universinator.View.Navigation
             Decorate decorate = new Decorate();
             banner.DisplayBanner();
             Console.WriteLine("SHIP INFORMATION");
-
 
 
 
@@ -66,7 +66,7 @@ namespace Universinator.View.Navigation
             switch (option)
             {
                 case 1:
-                    Console.Clear();
+                    Console.Clear();       
                     ActiveSolarSystemOverViewMenu activeSolarSystemOverViewMenu = new ActiveSolarSystemOverViewMenu();
                     activeSolarSystemOverViewMenu.ActiveSolarSystemOverViewDisplay();
                     break;
