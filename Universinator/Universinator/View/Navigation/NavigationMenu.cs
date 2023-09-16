@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Universinator.Controller;
+using Universinator.Model;
 using Universinator.Model.Ship;
 using Universinator.View.Decorator;
 
@@ -24,7 +25,7 @@ namespace Universinator.View.Navigation
             Decorate decorate = new Decorate();
             banner.DisplayBanner();
             Console.WriteLine("SHIP INFORMATION");
-
+            
 
 
             (int left, int top) = Console.GetCursorPosition();

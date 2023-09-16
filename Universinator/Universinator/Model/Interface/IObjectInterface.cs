@@ -8,10 +8,10 @@ namespace Universinator.Model.Interface
 {
     public class IObjectInterface
     {
-        public void Add(object obj) { }
-        public void Remove(object obj) { }
+        public void Add(Object obj) { }
+        public void Remove(Object obj) { }
 
-        public void Update(object obj) { }
-        public void Delete(object obj) { }
+        public void Update(Object obj) { }
+        public void Delete(Object obj) { }
     }
 }

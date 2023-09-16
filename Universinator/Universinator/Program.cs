@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using Universinator.Model.Systems;
+using System.Drawing;
 
 namespace Universinator
 
@@ -14,12 +16,14 @@ namespace Universinator
 
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = Encoding.UTF8;
+            
             ControllerClass controller = new ControllerClass();
-           
 
-            controller.Load();
-            Console.ReadLine();
+            #region intro sequence
+            //controller.Load();
+            //Console.ReadLine();
+            #endregion
 
             Console.Clear();
            

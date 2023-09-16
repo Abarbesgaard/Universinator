@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Universinator.Controller;
+using Universinator.Model;
+using Universinator.Model.Interface;
 using Universinator.Model.Repositories;
 using Universinator.Model.Systems;
 using Universinator.View.Decorator;
@@ -22,13 +24,8 @@ namespace Universinator.View.Navigation
             Decorate decorate = new Decorate();
             PlayerController playerController = PlayerController.GetInstance();
             banner.DisplayBanner();
-            Console.WriteLine("Our ship is currently at: planet1 ^");
-
-            PlanetRepository repo = new PlanetRepository();
-            NavigationSystem navSystem = new NavigationSystem(repo);
-
-            string name = navSystem.CurrentPlanet().Name;
-
+            playerController.NavigationSystemShowCurrentPlanet();
+            
 
             (int left, int top) = Console.GetCursorPosition();
             var option = 1;

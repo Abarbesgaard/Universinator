@@ -10,7 +10,7 @@ namespace Universinator.Controller
 {
     public class PlayerController
     {
-        public NavigationSystem navigationSystem;
+        public NavigationSystem navigationSystem = new NavigationSystem();
         private static PlayerController instance;
         private PlayerController() { }
         public static PlayerController GetInstance()
@@ -20,6 +20,11 @@ namespace Universinator.Controller
                 instance = new PlayerController();
             }
             return instance;
+        }
+
+        public void NavigationSystemShowCurrentPlanet()
+        {
+            navigationSystem.CurrentPlanet();
         }
 
     }
