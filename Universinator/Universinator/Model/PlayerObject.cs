@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 using Universinator.Model.Ship;
 using Universinator.Model.Systems;
 
-namespace Universinator.Controller
+namespace Universinator.Model
 {
-    public class PlayerController
+    public class PlayerObject
     {
         public NavigationSystem navigationSystem = new NavigationSystem();
-        private static PlayerController instance;
-        private PlayerController() { }
-        public static PlayerController GetInstance()
+        private static PlayerObject instance;
+        private PlayerObject() { }
+        public static PlayerObject GetInstance()
         {
             if (instance == null)
             {
-                instance = new PlayerController();
+                instance = new PlayerObject();
             }
             return instance;
         }

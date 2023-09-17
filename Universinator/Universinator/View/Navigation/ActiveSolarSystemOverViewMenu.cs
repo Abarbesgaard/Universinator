@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Universinator.Controller;
 using Universinator.Model;
 using Universinator.Model.Interface;
 using Universinator.Model.Repositories;
@@ -22,7 +21,7 @@ namespace Universinator.View.Navigation
         {
             Banner banner = new Banner();
             Decorate decorate = new Decorate();
-            PlayerController playerController = PlayerController.GetInstance();
+            PlayerObject playerController = PlayerObject.GetInstance();
             banner.DisplayBanner();
             playerController.NavigationSystemShowCurrentPlanet();
             
