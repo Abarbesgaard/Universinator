@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using Universinator.Model.Systems;
 using System.Drawing;
+using Universinator.Model;
 
 namespace Universinator
 
@@ -19,7 +20,8 @@ namespace Universinator
             Console.OutputEncoding = Encoding.UTF8;
             
             ControllerClass controller = new ControllerClass();
-
+            PlayerObject _playerObject = PlayerObject.GetInstance();
+            _playerObject.navigationSystem.InitializeRepositoryWithDefaultPlanet();
             #region intro sequence
             //controller.Load();
             //Console.ReadLine();

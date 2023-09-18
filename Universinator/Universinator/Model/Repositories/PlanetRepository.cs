@@ -5,15 +5,19 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using Universinator.Model.Interface;
+using Universinator.Model.PlanetModel;
 
 namespace Universinator.Model.Repositories
 {
     public class PlanetRepository : IObjectInterface
     {
+
         public List<Planet> _planets =  new List<Planet>();
-        public void Add(Planet planet) 
+        
+        public void Add(int id)
         {
-            _planets.Add(planet);
+            Planet newplanet = Planet.GenerateRandomPlanet(id);
+            _planets.Add(newplanet);
         }
         public void Remove(Planet planet)
         {
@@ -25,5 +29,6 @@ namespace Universinator.Model.Repositories
         {
             return _planets.FirstOrDefault(planet => planet.ID == id);
         }
+
     }
 }

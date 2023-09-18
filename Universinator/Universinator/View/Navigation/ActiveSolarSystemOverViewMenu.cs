@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Universinator.Model;
 using Universinator.Model.Interface;
+using Universinator.Model.PlanetModel;
 using Universinator.Model.Repositories;
 using Universinator.Model.Systems;
 using Universinator.View.Decorator;
+
+
 
 namespace Universinator.View.Navigation
 {
@@ -16,6 +19,7 @@ namespace Universinator.View.Navigation
         private int menuOptionMin = 1;
         private int menuOptionMax = 4;
         private string userInput = "";
+        private PlanetRepository planetRepository = new PlanetRepository();
 
         public void ActiveSolarSystemOverViewDisplay()
         {
@@ -23,6 +27,18 @@ namespace Universinator.View.Navigation
             Decorate decorate = new Decorate();
             PlayerObject playerController = PlayerObject.GetInstance();
             banner.DisplayBanner();
+
+            //planetRepository.Add(1) ;
+            Planet currentPlanet = planetRepository.GetPlanetByID(1);
+            if (currentPlanet != null)
+            {
+                Console.WriteLine("Current Planet Found!");
+                Console.WriteLine(currentPlanet.PlanetTemperature.ToString());
+                Console.WriteLine(currentPlanet.PlanetFlora.ToString());
+            }
+            
+
+
             playerController.NavigationSystemShowCurrentPlanet();
             
 
