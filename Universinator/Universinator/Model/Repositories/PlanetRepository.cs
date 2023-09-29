@@ -16,8 +16,8 @@ namespace Universinator.Model.Repositories
         
         public void Add(int id)
         {
-            Planet newplanet = Planet.GenerateRandomPlanet(id);
-            _planets.Add(newplanet);
+            
+            //_planets.Add(newplanet);
         }
         public void Remove(Planet planet)
         {
@@ -25,10 +25,10 @@ namespace Universinator.Model.Repositories
         }
         public void Update(Planet planet) { }
         public void Delete(Planet planet) { }
-        public Planet GetPlanetByID(int id)
-        {
-            return _planets.FirstOrDefault(planet => planet.ID == id);
-        }
+        //public Planet GetPlanetByID(int id)
+        //{
+        //    //return _planets.FirstOrDefault(planet => planet.ID == id);
+        //}
 
     }
 }

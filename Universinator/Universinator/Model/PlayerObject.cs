@@ -24,7 +24,7 @@ namespace Universinator.Model
 
         public void NavigationSystemShowCurrentPlanet()
         {
-            navigationSystem.CurrentPlanet();
+            //navigationSystem.CurrentPlanet();
         }
 
     }

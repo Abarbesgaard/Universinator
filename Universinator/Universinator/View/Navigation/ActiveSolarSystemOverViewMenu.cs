@@ -28,14 +28,15 @@ namespace Universinator.View.Navigation
             PlayerObject playerController = PlayerObject.GetInstance();
             banner.DisplayBanner();
 
+            //playerController.navigationSystem.InitializeRepositoryWithDefaultPlanet();
             //planetRepository.Add(1) ;
-            Planet currentPlanet = planetRepository.GetPlanetByID(1);
-            if (currentPlanet != null)
-            {
-                Console.WriteLine("Current Planet Found!");
-                Console.WriteLine(currentPlanet.PlanetTemperature.ToString());
-                Console.WriteLine(currentPlanet.PlanetFlora.ToString());
-            }
+            //Planet currentPlanet = planetRepository.GetPlanetByID(1);
+            //if (currentPlanet != null)
+            //{
+            //    Console.WriteLine("Current Planet Found!");
+            //    //Console.WriteLine(currentPlanet.PlanetTemperature.ToString());
+            //    //Console.WriteLine(currentPlanet.PlanetFlora.ToString());
+            //}
             
 
 

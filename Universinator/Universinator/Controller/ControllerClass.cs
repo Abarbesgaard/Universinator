@@ -11,27 +11,33 @@ using Universinator.Model.Repositories;
 using Universinator.Model.Systems;
 using Universinator.View;
 using Universinator.View.LoadScreen;
+using Universinator.View.MainShipWindow;
 
 namespace Universinator.Controller
 {
     public class ControllerClass
     {
-        
+
         StartMenu startMenu = new StartMenu();
         LoadScreen Screen = new LoadScreen();
-        
+
+
+        GameMenu menu = new GameMenu();
 
 
         public void Run()
         {
-            startMenu.DisplayStartMenu();
+            //startMenu.DisplayStartMenu();
+            menu.DisplayGameMenu();
         }
 
-        public void Load()
-        {
-            Screen.LoadScreenDisplay();
-        }
+        //public void Load()
+        //{
+        //    Screen.LoadScreenDisplay();
 
-       
+        //}
     }
 }
+
+
+

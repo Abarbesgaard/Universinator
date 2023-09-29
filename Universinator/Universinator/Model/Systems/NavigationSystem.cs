@@ -12,36 +12,13 @@ namespace Universinator.Model.Systems
     {
         private PlanetRepository _planetRepo = new PlanetRepository();
         private Planet _currentPlanet = null;
-        public void CurrentPlanet()
+        public void ActivePlanet()
         {
+            // Denne skal finde ud af om spilleren er på planet på en liste, planeten på denne liste har en true i IsActive
             
-            Planet currentPlanet = _planetRepo.GetPlanetByID(1);
-
-            if (currentPlanet != null)
-            {
-                Console.WriteLine("Current Planet Details:");
-                Console.WriteLine($"ID: {currentPlanet.ID}");
-                Console.WriteLine($"Type: {currentPlanet.PlanetType}");
-                Console.WriteLine($"Temperature: {currentPlanet.PlanetTemperature}");
-                Console.WriteLine($"Atmosphere: {currentPlanet.PlanetAtmosphere}");
-                Console.WriteLine($"Fauna: {currentPlanet.PlanetFauna}");
-                Console.WriteLine($"Flora: {currentPlanet.PlanetFlora}");
-            }
            
         }
-        public void InitializeRepositoryWithDefaultPlanet()
-        {
-            if (_currentPlanet == null) // Only generate a new planet if one doesn't already exist
-            {
-                _currentPlanet = Planet.GenerateRandomPlanet(1);
-                _planetRepo.Add(_currentPlanet);
-            }
-        }
-
-        public void TravelToNewPlanet(int id)
-        {
-            _currentPlanet = _planetRepo.GetPlanetByID(id);
-        }
+       
 
         //private SolarSystem solarSystem;
 
